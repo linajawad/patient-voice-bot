@@ -1,0 +1,24 @@
+Call ID: d175d1fc-4815-4b4b-be8f-209945e582bf
+Duration: 2.05 mins
+Summary: The caller, John Smith, contacted Pivot to inquire about their acceptance of Blue Cross Blue Shield insurance for a routine office visit. The representative explained that to confirm acceptance, they would need the member ID from John's insurance card, as acceptance can depend on the specific plan. Since John didn't have his card with him, the representative offered to send a secure link to update his insurance info, but John declined. The representative advised John to have his insurance card handy to verify coverage and to call back or use their secure portal to share his details. The call ended with the representative offering assistance if John had more questions later.
+========================================
+
+user: Call may be recorded for quality and training purposes. Para español, o prima idos. 
+ user: Thank you for calling Pivot. 
+ user: Hi there. <backchannel suppressed> 
+ assistant: Hi, I'm calling to find out if you accept Blue Cross Blue Shield insurance. 
+ user: I could help with that. Would you like to create a demo patient profile first? I just need your first and last name. 
+ assistant: My name is John Smith. 
+ assistant: Hello? Can you hear me? 
+ user: Your patient profile is set up and your date of birth is July 4, 2000 for Devo purposes. How can I help you today? 
+ assistant: I wanted to check if you accept Blue Cross Blue Shield for a routine office visit. 
+ user: To check if Blue Cross Blue Shield is accepted, I'll need the member ID from your insurance card. Could you please provide that number? 
+ assistant: I don't have my card with me right now. Can you just tell me if you accept Blue Cross Blue Shield in general? 
+ user: Insurance acceptance can depend on the specific plan and details from your card. For the most accurate answer, I'll need your member ID and plan details. If you'd like, I can send you a secure link by text to update your insurance info when you have your card. Would you like me to send that link? 
+ assistant: No, that's okay. So you can't confirm if you accept Blue Cross Blue Shield without the specific ID? What should I do to verify coverage before coming in? 
+ user: To verify coverage, you'll need your insurance card handy. Once you have it, you can call back or use our secure lake to share your details. That way we can confirm if your specific Blue Cross Blue Shield plan is accepted. Is there anything else I can help with? 
+ assistant: Okay, I understand. Thanks for your help. 
+ user: You're welcome. If you have more questions later, just give us a call. Have a great day. 
+ agent-action: Ended call 
+ assistant: You too, bye. 
+ 

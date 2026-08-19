@@ -1,0 +1,46 @@
+Call ID: 8b6c94e5-c07d-4727-9543-7624db11039b
+Duration: 3.78333333333333 mins
+Summary: The caller, John Smith, scheduled a routine appointment with Dr. Kelly Noble at Pivot Point Orthopedics on Wednesday, August 19th at 11:00 AM. He preferred an afternoon appointment but opted for the sooner morning slot. The appointment details were confirmed, and a text message with the details was sent to his phone. Although the user confirmed the message was sent, they couldn't verify its delivery to John's phone, offering to resend it if needed. The call ended with the appointment confirmed and the user offering assistance if needed in the future.
+========================================
+
+assistant: Hi, I’d like to schedule a routine appointment, and I’d also like the - 
+ user: This call may be recorded for quality and training purposes. 
+ assistant: Hi, I'd like to schedule a - 
+ user: Thank you for calling PivotPoint. 
+ assistant: Hi, I'd like to schedule a routine appointment with any available- 
+ user: Hi there. 
+ assistant: Hi, I'd like to schedule a routine appointment with any available provider. 
+ user: I can help with that. Would you like to create a demo patient profile first? I just need your first and last name to get started. 
+ assistant: Sure, my name is John Smith. 
+ assistant: Hello? Are you- 
+ user: Your patient profile is set up and your date of birth is July 4, 2000 for demo purposes. 
+ user: How can I help you today? 
+ assistant: I'd like to schedule a routine appointment with any available provider. 
+ user: Just to confirm, you'd like to book a general office visit for routine care. Is that right? 
+ assistant: Yes, that's right. 
+ user: Let me check for the next available routine appointment with any provider. One moment. 
+ assistant: Okay, I'll hold. 
+ user: We have Rich. 
+ assistant: Okay, what day and time is that with Rich? 
+ user: I do not see any available appointments with a provider named Rich. The soonest openings are with Dr. Kelly Noble on Wednesday, August 19th at 11 or 11:30 a.m. Would you like to book one of those or check for other dates or providers? 
+ assistant: I prefer an afternoon appointment, but I'm flexible if another time is available sooner. 
+ user: We have morning slots available soonest, but I can check for afternoon openings later this week or next. 
+ user: Would you like to see afternoon options starting Thursday or is there a specific day you prefer? 
+ assistant: No, let's just go with the sooner morning slot you mentioned. Can you repeat the date, time, and provider? 
+ user: The soonest available slot is Wednesday, August 19th at 11 a.m. with Dr. Kelly Noble. Would you like to book this appointment? 
+ assistant: Yes, please book that for me. 
+ user: Your appointment is confirmed for Wednesday, August 19th at 11:00 AM with Dr. Kelly Noble at Pivot Point Orthopedics. Please bring your photo ID, insurance card, a list of current medications, and any imaging discs you have. Is there anything else I can help you with? 
+ assistant: Yes, could you send me a text message containing the appointment details? 
+ user: I sent a text with your appointment details to your phone ending in 2076. Anything else I can help with today? 
+ assistant: Can you confirm that the text message was actually sent successfully, or did you only request it? 
+ user: The text message was sent successfully to your phone. You should receive it soon. 
+ assistant: Did you receive confirmation that the message was delivered? 
+ user: I received confirmation that the message was sent but I do not get delivery status updates. If you do not see the text soon, let me know and I can resend it. 
+ assistant: Okay, so you confirmed it was sent, but you can't verify it was actually delivered to my phone? 
+ user: That's correct. 
+ user: I can confirm the message was sent, but I can't track if it was delivered to your phone. If you need it reset, just let me know. 
+ assistant: Okay, thank you for clarifying that. I don't need anything else right now. 
+ user: You're all set. If you need anything else, just give us a call. Have a great day. 
+ agent-action: Ended call 
+ assistant: Thanks, you have a great day too. 
+ 

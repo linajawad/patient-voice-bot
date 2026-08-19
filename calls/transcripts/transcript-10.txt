@@ -1,0 +1,19 @@
+Call ID: e22f33b3-3ae9-4d47-9cdc-f6d106a70dfe
+Duration: 0.983333333333333 mins
+Summary: The caller inquired about the office hours of the PIV clinic, specifically asking about weekday and weekend hours. The representative was unable to provide the exact hours, recommending that the caller check with clinic staff or at the booth for the most up-to-date information. The caller's questions were addressed, and the call was concluded with no further assistance needed.
+========================================
+
+assistant: Hi, I wanted to find out what your clinic’s office hours are 
+ user: This call may be recorded for quality and training purposes. 
+ assistant: That's fine. I'm just calling to ask - 
+ user: Thank you for calling PIV. 
+ assistant: Hi, I'm calling to ask about your office hours. What time do you open and close on weekdays? 
+ user: I don't have the exact office hours available right now. If you need to visit, I recommend checking at the booth or with clinic staff for the most up-to-date hours. Is there anything else I can help you with? 
+ user: you with? 
+ assistant: I was just asking if you're open on Saturday or Sunday? 
+ user: I don't have the weekend hours available at the moment. For the most accurate information please check with the clinic staff or at the booth. Would you like help with anything else? 
+ assistant: No, that's all I needed. Thanks for your help. 
+ user: You're welcome. Have a great day. 
+ assistant: You too, bye. 
+ agent-action: Ended call 
+ 

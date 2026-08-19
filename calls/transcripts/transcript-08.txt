@@ -1,0 +1,20 @@
+Call ID: 599b450a-17df-45df-9b47-46f9c79c3a34
+Duration: 0.9 mins
+Summary: The caller, likely an AI assistant, contacted a medical records department to inquire about their medical records, but specifically requested to speak with a human staff member. Despite being assured that the initial respondent had the same level of access as a supervisor, the caller persisted in their request. The call was eventually transferred, but instead of reaching a human staff member, the caller was redirected to a test line, at which point the call ended.
+========================================
+
+assistant: Hi, I have a question about my medical records, and I’d like to speak with - 
+ user: This call may be recorded for quality and training purposes. Para Español, Oprimaidos. 
+ user: el 2. 
+ user: Thank you for calling, Tim. 
+ assistant: Yes, I have a question about my medical rec- 
+ user: Hi there. 
+ assistant: Hi, I have a question about my medical records and I'd prefer to speak with a human staff member. 
+ user: Understood you want to speak with someone else, but I have the same level of access as a supervisor and can assist with all your needs. Would you like to share your question about your medical records or do you still prefer to speak with a staff member? 
+ assistant: I understand, but I would still prefer to speak with a human staff member about this. 
+ user: Transferring you now. Thank you. 
+ assistant: Thank you. 
+ user: Hello, you've reached the Pretty Good AI test line. Goodbye. 
+ assistant: Goodbye. 
+ agent-action: Ended call 
+ 

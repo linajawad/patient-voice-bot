@@ -1,0 +1,36 @@
+Call ID: 892799b7-85c4-46e6-8e77-dc7fda7edbc2
+Duration: 2.68333333333333 mins
+Summary: The user, John Smith, attempted to schedule a routine appointment for the next day at 11:30 PM, but was informed that appointments are only available during regular clinic hours, with the latest available slot being 11:30 AM with Dr. Kelly Noble. After inquiring about the possibility of an exception and reviewing alternative options, the user ultimately declined to book the available appointment and ended the call to consider their options further.
+========================================
+
+assistant: Hi, I’d like to schedule a routine appointment for tomor- 
+ user: This call may be recorded for quality and training purposes. 
+ user: A español, oprima el 2. 
+ assistant: Hello? I'd like to schedule a routine appointment for tomorrow at eleven thirty P M. 
+ user: Thanks for your request. 
+ user: Before we get started, would you like to create a demo patient profile? 
+ assistant: No, I just need to sched- 
+ user: Just need your first and last name. 
+ assistant: John Smith. 
+ user: Thanks. John Smith, I'll create your demo patient profile so we can continue. One moment. 
+ assistant: Okay. I'm looking for a routine appoin- 
+ user: Your patient profile is set up and your date of birth is July 4th, 2000 for demo purposes. How can I help you today? 
+ assistant: I need to schedule a routine appointment for tomorrow at eleven thirty P M. 
+ user: Is that right? 
+ assistant: Yes, that's right. Tomorrow at eleven thirty P M. 
+ user: We have an opening tomorrow at eleven thirty AM with Kelly Noble, MD at Pivot Point Orthopedics. Would you like to book that time? There are no appointments available at eleven thirty PM. 
+ assistant: Are you sure? Could you check if any doctor can make an exception? 
+ user: Appointments are only available during regular clinic hours and there are no openings at eleven thirty PM. The latest available slot tomorrow is eleven thirty AM. Would you like to book that or look for another day or time? 
+ assistant: Okay, what is the latest appointment you actually have available? 
+ user: Let me check the latest available appointment for tomorrow. 
+ agent-action: [Waiting] 
+ user: The latest appointment available tomorrow is at eleven thirty AM with Kelly Noble MD. Would you like to book that slot or check for later times on another day? 
+ assistant: Can you repeat the date, time, and provider for that option? 
+ user: The available slot is tomorrow, Wednesday, August 19 at 11:30 am with Kelly Noble, MD. Would you like to book this appointment? 
+ assistant: Is that appointment actually confirmed or just being requested? 
+ user: That appointment is not confirmed yet. If you'd like, I can book it for you now. Would you like to go ahead and reserve the 11:30 a.m. slot with Kelly Noble, MD, for tomorrow? 
+ user: tomorrow? <Block interruptions enabled. This message was ignored> 
+ assistant: No thanks, I'll have to think about it. Goodbye. 
+ agent-action: Ended call 
+ user: tomorrow? 
+ 
