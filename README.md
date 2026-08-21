@@ -251,31 +251,215 @@ The repository uses `.env.example` to show the required configuration without ex
 
 Call recordings and other potentially sensitive artifacts should not be committed to a public repository unless they have been reviewed and are safe to share.
 
-## Limitations
+# Patient Voice Bot 🤖📞
 
-* Recording availability depends on the telephony provider.
-* Some recordings may return an unavailable response even after the call completes.
-* Some QA findings still require human review.
-* The current test runner executes scenarios sequentially.
+An automated Python voice-testing bot built to evaluate, stress-test, and identify quality issues in an AI healthcare phone agent.
+
+The bot acts as a realistic patient, places automated phone calls through the Bland AI API, retrieves the resulting conversations, and stores transcripts and recordings locally for QA analysis.
+
+## What I Built
+
+This project combines:
+
+* Python automation
+* REST API integration
+* AI voice-agent testing
+* Scenario-based QA
+* Conversation analysis
+* Bug documentation
+* Local test artifact storage
+
+The goal is not simply to make a phone call. The goal is to **test how reliably an AI agent handles realistic patient interactions and edge cases.**
+
+## How It Works
+
+```text
+Patient Scenario
+      ↓
+Python Test Bot
+      ↓
+Bland AI Telephony API
+      ↓
+AI Healthcare Agent
+      ↓
+Phone Conversation
+      ↓
+Call Completion
+      ↓
+Python Retrieves Call Data
+      ↓
+Transcript + Recording
+      ↓
+Local QA Evidence
+      ↓
+Bug Report
+```
+
+## Test Scenarios
+
+The project includes 10 completed patient scenarios covering workflows such as:
+
+1. Appointment scheduling
+2. General clinic questions
+3. Appointment cancellation
+4. Medication refill request
+5. Insurance questions
+6. Appointment confirmation
+7. Provider selection
+8. Appointment cancellation verification
+9. Appointment rescheduling
+10. New-patient vs. regular office visit
+
+Each scenario is designed to test a specific patient workflow rather than simply generate a successful call.
+
+## QA Findings
+
+During testing, I identified issues including:
+
+### Provider Identity Inconsistency
+
+The agent presented one provider during appointment availability and a different provider during final confirmation.
+
+**Risk:** A patient could receive incorrect appointment information.
+
+### Appointment State Inconsistency
+
+During a rescheduling scenario, the agent reported that the patient had no upcoming appointment even though the patient was calling specifically to modify an existing appointment.
+
+**Risk:** The patient may be unable to correctly manage an existing appointment.
+
+### Speech Overlap / Barge-In Handling
+
+The agent sometimes continued repeating portions of a response after the patient had already started speaking.
+
+**Risk:** Important information can be missed and the conversation feels unnatural.
+
+### Provider Name Recognition
+
+Provider names were sometimes pronounced or represented inconsistently during the same conversation.
+
+**Risk:** This can contribute to confusion during appointment confirmation.
+
+More details are documented in [`bug_report.md`](bug_report.md).
+
+## Project Structure
+
+```text
+patient-voice-bot/
+│
+├── main.py
+├── README.md
+├── ARCHITECTURE.md
+├── bug_report.md
+├── .env.example
+├── .gitignore
+│
+└── calls/
+    ├── recordings/
+    │   └── call recordings
+    │
+    └── transcripts/
+        ├── call-01.txt
+        ├── call-02.txt
+        ├── call-03.txt
+        ├── call-04.txt
+        ├── call-05.txt
+        ├── call-06.txt
+        ├── call-07.txt
+        ├── call-08.txt
+        ├── call-09.txt
+        └── call-10.txt
+```
+
+## Technical Architecture
+
+The system uses Python as the orchestration layer and communicates with the Bland AI REST API.
+
+The bot is responsible for:
+
+1. Loading configuration from environment variables.
+2. Sending structured patient scenarios to the telephony API.
+3. Initiating outbound test calls.
+4. Waiting for call completion.
+5. Retrieving call metadata and transcripts.
+6. Saving transcripts locally.
+7. Attempting to download call recordings.
+8. Organizing test evidence for QA review.
+
+See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the technical design and trade-offs.
+
+## Setup
+
+### Requirements
+
+* Python 3.10+
+* Bland AI API key
+* A phone number configured for outbound calling
+
+### Install Dependencies
+
+```bash
+pip install requests python-dotenv
+```
+
+### Environment Variables
+
+Create a `.env` file based on `.env.example`.
+
+```env
+BLAND_API_KEY=your_api_key
+BLAND_FROM_NUMBER=your_bland_phone_number
+TEST_NUMBER=your_test_number
+```
+
+**Never commit your real `.env` file or API keys to GitHub.**
+
+## Run the Test Bot
+
+```bash
+python main.py
+```
+
+The bot will:
+
+* Start the configured patient scenario.
+* Place the test call.
+* Wait for completion.
+* Retrieve the transcript.
+* Save the transcript under `calls/transcripts/`.
+* Attempt to save the recording under `calls/recordings/`.
+
+## QA Evidence
+
+The repository contains locally archived transcripts from the completed test scenarios.
+
+These transcripts were used as evidence when documenting the observed bugs and conversational issues.
+
+## Why This Project Matters
+
+This project demonstrates practical experience with more than API usage.
+
+It shows how I approached an AI system as a **QA engineer and tester**:
+
+* I designed realistic user scenarios.
+* I tested multi-step workflows.
+* I looked for state inconsistencies.
+* I evaluated conversational behavior.
+* I documented reproducible bugs.
+* I preserved test evidence.
+* I automated the collection of call results.
+
+The project focuses on finding issues that may not be visible when evaluating an AI agent based only on whether a call technically succeeds.
 
 ## Future Improvements
 
-Potential improvements include:
+Potential next steps include:
 
-* JSON/YAML-based scenario configuration
-* Batch scenario execution
 * Automated regression testing
-* Structured transcript parsing
-* Automatic provider-name consistency checks
-* Appointment date/time validation
-* Automated bug classification
-* HTML QA reports
-* Dashboard-based test results
-* CI/CD integration
-* Expected-vs-observed behavior comparison
-
-## Project Goal
-
-The goal of this project is to demonstrate how an AI-powered voice agent can be tested systematically using realistic patient scenarios, automated phone calls, locally archived evidence, and structured QA analysis.
-
-Rather than building only a voice bot, this project focuses on **testing the reliability, consistency, and real-world behavior of AI voice agents**.
+* Structured JSON test results
+* Automatic bug classification
+* Response-quality scoring
+* Provider/date/time consistency checks
+* Automatic detection of speech overlap
+* CI-based test reporting
+* Dashboard for test results and trends
