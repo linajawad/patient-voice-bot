@@ -1,16 +1,25 @@
-python
 import os
 import time
-import requests
 from pathlib import Path
+
+import requests
 from dotenv import load_dotenv
+
+
+# ============================================================
+# PATIENT VOICE BOT
+# ============================================================
+# This script creates outbound test calls through the Bland AI
+# API, waits for the call to finish, and saves the transcript
+# and recording for QA review.
+# ============================================================
 
 
 # ============================================================
 # CONFIGURATION
 # ============================================================
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).resolve().parent
 
 load_dotenv(BASE_DIR / ".env")
 
@@ -20,9 +29,10 @@ TEST_NUMBER = os.getenv("TEST_NUMBER")
 
 BASE_URL = "https://api.bland.ai/v1"
 
-# Change these two values for each new test scenario.
-CALL_NUMBER = 11
-SCENARIO_NAME = "Appointment Follow-Up"
+# Update these values when running a new test scenario.
+# The existing project contains completed calls 01-10.
+CALL_NUMBER = 10
+SCENARIO_NAME = "New Patient Scenario"
 
 MAX_DURATION = 4
 MAX_WAIT_SECONDS = 420
@@ -40,25 +50,30 @@ SCENARIO = """
 You are a realistic human patient calling a medical clinic.
 
 Stay completely in character as a normal patient.
-Never say that you are an AI, bot, automated tester, or that this is a test.
 
-Your behavior should sound natural and conversational.
+Never say that you are an AI, bot, automated tester, or that
+this is a test.
+
+Speak naturally and conversationally.
 
 [REPLACE THIS SECTION WITH THE PATIENT SCENARIO.]
 
-If the agent asks for your name, provide the patient name specified
-by the scenario.
+If the agent asks for your name, provide the patient name
+specified by the scenario.
 
-If the agent asks for your date of birth, provide the date specified
-by the scenario.
+If the agent asks for your date of birth, provide the date
+specified by the scenario.
 
 Follow the scenario naturally.
 
-Do not intentionally make the conversation longer than necessary.
+Do not intentionally make the conversation longer than
+necessary.
+
 Do not rush the conversation.
 
-If the agent provides the requested information or completes the
-requested action, respond naturally and end the call politely.
+If the agent provides the requested information or completes
+the requested action, respond naturally and end the call
+politely.
 """
 
 
@@ -138,12 +153,7 @@ def save_transcript(call_data):
 # ============================================================
 
 def save_recording(call_id):
-    """
-    Download the call recording when it is available.
-
-    Recording availability can vary depending on the provider.
-    A failed recording download does not prevent transcript saving.
-    """
+    """Download the call recording when available."""
 
     RECORDINGS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -163,16 +173,21 @@ def save_recording(call_id):
     print(f"Recording status: {response.status_code}")
 
     if not response.ok:
-        print("WARNING: Recording could not be downloaded automatically.")
-        print(response.text)
+        print(
+            "WARNING: Recording could not be downloaded automatically."
+        )
+
+        if response.text:
+            print(response.text)
 
         print("")
-        print("If the recording is available in the Bland dashboard,")
-        print("download it manually and save it as:")
-
         print(
-            RECORDINGS_DIR /
-            f"call-{CALL_NUMBER:02d}.mp3"
+            "If the recording is available in the Bland dashboard,"
+        )
+        print("download it manually and save it as:")
+        print(
+            RECORDINGS_DIR
+            / f"call-{CALL_NUMBER:02d}.mp3"
         )
 
         return None
@@ -242,15 +257,11 @@ def wait_for_call(call_id):
 
 
 # ============================================================
-# SAVE COMPLETE CALL ARTIFACTS
+# SAVE CALL ARTIFACTS
 # ============================================================
 
 def save_call(call_id, call_data=None):
-    """
-    Save transcript and recording for a completed call.
-
-    Transcript saving is independent from recording availability.
-    """
+    """Save transcript and recording for a completed call."""
 
     print("")
     print("========================================")
@@ -272,37 +283,46 @@ def save_call(call_id, call_data=None):
 
 
 # ============================================================
+# VALIDATE CONFIGURATION
+# ============================================================
+
+def validate_configuration():
+    """Check that all required environment variables exist."""
+
+    required_variables = {
+        "BLAND_API_KEY": BLAND_API_KEY,
+        "BLAND_FROM_NUMBER": BLAND_FROM_NUMBER,
+        "TEST_NUMBER": TEST_NUMBER,
+    }
+
+    missing = [
+        name
+        for name, value in required_variables.items()
+        if not value
+    ]
+
+    if missing:
+        print("ERROR: Missing environment variables:")
+
+        for variable in missing:
+            print(f"  - {variable}")
+
+        print("")
+        print("Check your .env file.")
+        return False
+
+    return True
+
+
+# ============================================================
 # MAKE OUTBOUND TEST CALL
 # ============================================================
 
 def make_call():
+    """Create and monitor one outbound patient test call."""
 
-    # --------------------------------------------------------
-    # Validate configuration
-    # --------------------------------------------------------
-
-    missing = []
-
-    if not BLAND_API_KEY:
-        missing.append("BLAND_API_KEY")
-
-    if not BLAND_FROM_NUMBER:
-        missing.append("BLAND_FROM_NUMBER")
-
-    if not TEST_NUMBER:
-        missing.append("TEST_NUMBER")
-
-    if missing:
-        print("ERROR: Missing environment variables:")
-        for variable in missing:
-            print(f"  - {variable}")
-        print("")
-        print("Check your .env file.")
+    if not validate_configuration():
         return
-
-    # --------------------------------------------------------
-    # Prepare request
-    # --------------------------------------------------------
 
     request_data = {
         "phone_number": TEST_NUMBER,
@@ -324,10 +344,6 @@ def make_call():
     print("Recording:         ON")
     print("")
     print("Sending call...")
-
-    # --------------------------------------------------------
-    # Submit call
-    # --------------------------------------------------------
 
     try:
         response = requests.post(
@@ -365,10 +381,6 @@ def make_call():
         print("ERROR: No call ID was returned.")
         return
 
-    # --------------------------------------------------------
-    # Call queued
-    # --------------------------------------------------------
-
     print("")
     print("========================================")
     print(f" CALL #{CALL_NUMBER:02d} SUCCESSFULLY QUEUED")
@@ -378,10 +390,6 @@ def make_call():
     print("The bot will wait for the call to finish.")
     print("Transcript and recording will be saved automatically.")
     print("")
-
-    # --------------------------------------------------------
-    # Wait and save
-    # --------------------------------------------------------
 
     final_call_data = wait_for_call(call_id)
 
