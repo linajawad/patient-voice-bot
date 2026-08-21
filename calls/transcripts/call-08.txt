@@ -1,0 +1,30 @@
+assistant: Hi, I already have an appointment scheduled, but I need to cancel it. 
+ user: This call may be recorded for quality and training purposes. 
+ assistant: Okay. 
+ user: Thanks for calling Pivot Point Orthopaedics, part of Pretty Good a I. How may I help you today? 
+ assistant: Hi, I already have an appointment scheduled, but I need to cancel it. 
+ user: So you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ assistant: Hello? 
+ user: I'm checking your upcoming appointments now. One moment. 
+ assistant: Okay, thank you. 
+ user: Have an appointment scheduled for Friday 
+ assistant: Okay. 
+ user: Would you like to cancel your 
+ assistant: Yes, I would like to cancel it. 
+ user: can you tell me the reason? 
+ assistant: Something came up and I won't be able to make it. 
+ user: Just to confirm, 
+ assistant: Yes? 
+ user: you'd like to cancel your appointment on 
+ assistant: Yes, that's correct. 
+ user: Your appointment for Friday, August twenty first with doctor Lukaszky has been canceled. Is there anything else I can help you with today? 
+ assistant: Can you confirm that the appointment has been cancelled? 
+ user: Your appointment on Friday, August twenty first with doctor Lukovsky has been canceled. Me know if you need anything else. 
+ assistant: Okay, thank you very much. Have a good day. 
+ user: You're all set. Have a great day. 
+ assistant: Bye. 
+ agent-action: Ended call 
+ 

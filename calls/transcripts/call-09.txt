@@ -1,0 +1,22 @@
+assistant: Hi, I already have an appointment scheduled, but I need to move it to a dif- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I already have an appointment scheduled, 
+ user: Thanks for calling PivotPoint Orthopedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I already have an appointment scheduled, but I need to move it to a different day. 
+ user: I see you're calling from the number we have on file. I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ assistant: Hello? 
+ user: Looks like you don't have any upcoming appointments scheduled right now. Would you like to book a new appointment? 
+ assistant: I have a conflict with the current appointment time. 
+ user: I don't see any appointments booked for you at the moment. 
+ assistant: Oh, I must have the wrong date in min- 
+ user: You looking to schedule a new appointment instead? 
+ assistant: No, I'd like to keep the appointment, but I need a different date. 
+ user: I understand you want to keep your appointment but move it to a different date. However, I'm not seeing any appointments scheduled for you right now. Are you sure it's with Pivot Point Orthopedics? 
+ assistant: I'm sorry, I must have called the wrong office. Thank you for your help. 
+ user: No problem at all. If you ever need orthopedic care or wanna schedule a pivot point or Orthopedics, just give us a call. Have a great day. 
+ assistant: You too, goodbye. 
+ agent-action: Ended call 
+ 

@@ -1,0 +1,23 @@
+assistant: Hi, I'm calling because I need a refill on one of my medications, but I'm not su- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I'm calling because I need a refill on one of my med- 
+ user: Thanks for calling Pivot Point Orthopedics, part of Pretty Good ai. How may I help you today? 
+ assistant: Hi, I'm calling because I need a refill on one of my medications, but I'm not sure if I need an appointment first. 
+ user: I see you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, my name is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ assistant: Hello? Are you there? 
+ user: I'm here. To check your chart, but I don't see any medications on file that I can refill for you. 
+ assistant: Oh, that's st- 
+ user: You think this is a mistake or wanna speak with 
+ assistant: I think there might be a mistake. It's my blood pressure medication. 
+ user: it can be <backchannel suppressed> 
+ user: I understand your concern. Since I don't see any medications listed for refill on your chart, would you like me to connect you with our patient support team to look into this further? 
+ assistant: Yes, please. That would be great. 
+ user: Transferring you now. Thank you. 
+ assistant: Thank you. 
+ user: Hello. You've reached the Pretty Good AI test line. Goodbye. 
+ agent-action: Ended call 
+ assistant: Goodbye. 
+ 

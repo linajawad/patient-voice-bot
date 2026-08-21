@@ -1,0 +1,27 @@
+assistant: Hi, I'd like to make an appointment, but I'm not completely sure what type of - 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I'd like to make an appointment, but I'm not completely sure what type of appointment I need. 
+ user: Thank <backchannel suppressed> 
+ user: No problem. Would you like to create a demo patient profile first? I just need your first and last name to get started. 
+ assistant: Sure, my name is John Smith. 
+ assistant: Hello? Are you there? 
+ user: Your patient profile is set up. And your date of birth is July fourth two thousand for demo purposes. What can I help you with today? 
+ assistant: I've been having occasional headaches and would like to speak with a doctor about them. It's not an emergency, but I'd like to get it checked out. 
+ user: It sounds like you'd like a general office visit to discuss your headaches with a doctor. That sound right? 
+ assistant: Yes, that sounds right. 
+ user: Do you have a specific doctor or provider you'd like to see, or are you open to the first available? 
+ assistant: I'm open to whoever is available, but could you tell me who the options are? 
+ user: You have two provider options, Zignia Lukowski MD, and Kelly Noble, MD. Both are at Pivot Point Orthopedics. Would you like to see either of them or just take the first available? 
+ assistant: I see, but I'm looking for a general practitioner for my headaches, not an orthopedist. Do you have any doctors who specialize in general medicine or primary care available? 
+ user: Let me check if there are any general medicine or primary care providers available for you. One moment. 
+ agent-action: [Waiting] 
+ user: It looks like the only available providers right now are both at PivotPoint Orthopedics. There aren't any general medicine or primary care doctors showing up in the schedule. Would you like to book with one of these providers? Or should I note your request for a general practitioner for the clinic to follow-up? 
+ assistant: I think I'd prefer to see a general practitioner for this. Could you please note my request and have the clinic follow up with me to schedule an appointment with the right type of doctor? 
+ user: I've documented your request for a general practitioner to discuss your headaches. The clinic support team will follow-up with you as soon as possible to help schedule with the right doctor. 
+ assistant: Okay, than- 
+ user: Anything else I can help you with today? 
+ assistant: No, that's all. Thank you for your help. 
+ user: You're all set. The clinic will reach out soon. Have a great day. 
+ assistant: You too, goodbye. 
+ agent-action: Ended call 
+ 

@@ -1,1 +1,12 @@
 .env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Call recordings
+calls/recordings/
+
+# Temporary files
+*.wav
+*.mp3

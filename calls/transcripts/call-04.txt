@@ -1,0 +1,26 @@
+assistant: Hi, I have a few questions before I make an appointment. 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Could you tell me where the clinic is located? 
+ user: Thanks for calling PivotPoint Orthopedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I have a few questions before I make an appointment. Could you tell me where the clinic is located? 
+ user: Our clinic is called Pivot Point Orthopedics. 
+ assistant: Okay, but could you tell m- 
+ user: We're located at one two three four recover 
+ assistant: What are your no- 
+ user: Our clinic is at one two three four recover. 
+ assistant: What are your normal office hours? 
+ user: We're open Monday. 
+ assistant: Okay, and what about the res- 
+ user: Our hours are nine AM to four PM. 
+ assistant: Okay, so just to make sure I understand, you're open until what time? 
+ user: Here's our full schedule. 
+ assistant: Do you accept insurance? 
+ user: Yes. We accept most insurance plans at Pivot Point Orthopedics. If you have questions about a specific plan, just let me know. 
+ assistant: I have Blue Cross Blue Shield. 
+ user: We do accept Cross Blue Shield. If you'd like to update your insurance or have questions about your coverage, I can help with that. Would you like to update your insurance information or ask something specific? 
+ assistant: Is there anything I need to bring with me if I come in for an appointment? 
+ user: Please bring your insurance card, a photo ID, and any relevant medical records or imaging if you have them. If you're taking any medications, a list of those is helpful too. 
+ assistant: Okay, thanks for answering all my questions. I appreciate your help. 
+ user: You're welcome. If you'd like to book an appointment or have more questions later, just give us a call. Have a great day. 
+ assistant: You too, goodbye. 
+ 

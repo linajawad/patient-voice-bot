@@ -1,0 +1,31 @@
+assistant: Hi, I'd like to make an appointment, but I'm not sure whether I need a new patient visit or a re- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I'd like to make an appointment, but I'm not sure whether I need a new patient visit or a regular o- 
+ user: How may I help you today? 
+ assistant: Hi, I'd like to make an appointment, but I'm not sure whether I need a new patient visit or a regular office visit. 
+ user: I see you're calling from the number we have on file. 
+ assistant: Yes, that's right. 
+ user: Am I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ assistant: He- 
+ user: The birthday doesn't match our records, but for demo purposes, I'll accept it. 
+ assistant: Okay, thank you. I've been having some mild shoulder pain for the last couple of weeks. It's not an emergency, but I'd like a doctor to take a look at it. 
+ user: Yes. I'm here. <backchannel suppressed> 
+ user: It sounds like you need a general office visit for a nonurgent concern. Does that sound right? Or would you like to describe your symptoms a bit more? 
+ assistant: That sounds right. No, this is the first time I'm coming in for this problem. Would that be considered a new patient visit? 
+ user: This already a patient here and this is a new issue, it's considered a regular office visit not a new patient visit. 
+ assistant: Got it. What does a regular - 
+ user: You have a provider you'd like to see, or should I look for 
+ assistant: I don't have a specific doctor in mind. I'd like the earliest reasonable appointment. 
+ user: We have openings this Friday with your primary providers. Doctor Zigniew Lukaske and doctor Kelly Noble. Would you prefer a morning or afternoon appointment? 
+ assistant: Is that appointment with an orthopedic doctor? 
+ user: Yes. Both doctor Zebney and Lukasco and doctor Kelly Noble are orthopedic doctors at Pivot Point Orthopedics. Would you like to book with either of them? 
+ assistant: Can you confirm the date, time, and doctor's name? 
+ user: The soonest available appointment is Friday, August twenty first. 
+ assistant: Okay, and what time is that available? 
+ user: At nine thirty AM. Doc the appointment is at nine thirty AM on Friday, August twenty first. With doctor Zivni Lukaszewski. Would you like to book this slot? 
+ assistant: Yes, that works for me. Please book it. 
+ user: Your appointment is confirmed for Friday, August twenty first at nine thirty AM with doctor Zigninyu Lukoski at Pivot Point Orthopaedics. Please bring your photo ID, insurance card, a list of current medications, and any imaging disks if you have them. 
+ 

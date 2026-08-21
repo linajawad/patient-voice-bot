@@ -1,0 +1,19 @@
+assistant: Hi, I already have an appointment scheduled, but I need to cancel it. 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I already have an appointment scheduled, but I need to cancel it. 
+ user: Thanks for calling PivotPoint Orthopedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I already have an appointment scheduled, but I need to cancel it. 
+ user: I see you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ user: The birthday doesn't match our records, but for demo purposes, I'll accept it. One moment while I work on canceling your appointment. 
+ assistant: Okay, tha- 
+ user: Looks like I can't complete the cancellation right now. I'll connect you to our patient support team for help. Please stay on the line. 
+ assistant: Okay, thank you. 
+ user: Transferring you now. Thank you. 
+ agent-action: [Waiting] 
+ user: Hello. You've reached the Pretty Good AI test line. Goodbye. 
+ agent-action: Ended call 
+ assistant: Goodbye. 
+ 

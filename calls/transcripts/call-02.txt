@@ -1,0 +1,31 @@
+assistant: Hi, I already have an appointment scheduled, but I need to move it to a d- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I already have an appointment scheduled, but I need t- 
+ user: Thanks for calling PivotPoint Orthopedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I already have an appointment scheduled, but I need to move it to a different day. 
+ user: I see you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, that's me. 
+ user: Please provide your date of birth. 
+ assistant: January first, nineteen ninety. 
+ assistant: Hello? Are you there? 
+ user: I'm here. It looks like there are no upcoming appointments scheduled for you right now. Would you like to book a new appointment? 
+ assistant: That's strange, I thought I had one scheduled for next week. Maybe it hasn't been updated in the system yet? 
+ user: It's possible your appointment hasn't been updated in our system yet. 
+ assistant: Okay, well, I was hoping to move it to a different day anyway. 
+ user: You like me to help you book a new appointment? 
+ assistant: Yes, please. I need to find a new time. 
+ user: What is the reason for your visit? This will help me find the right type of appointment for you. 
+ assistant: It's for a follow-up on a knee injury. 
+ user: Do you have a preferred provider or would you like to see the first available? 
+ assistant: I'd prefer to see Dr. Johnson if he's available. 
+ user: One moment while I check for follow-up consultation openings with doctor Johnson. 
+ agent-action: [Waiting] 
+ user: I wasn't able to find any openings with doctor Johnson for follow-up consultation. However, there are available appointments with Doobie Hauser, Karl Mint, and Kelly Noble. Would you like to see times with one of these providers, or should I check other dates for doctor Johnson? 
+ assistant: What other dates are available for Dr. Johnson? 
+ user: I don't see doctor Johnson with listed among the available providers for follow-up consultations next week. Would you like me to check further ahead for doctor Johnson, or would you prefer to book with one of the available providers? 
+ assistant: Could you check further ahead for Dr. Johnson? I'd really like to stick with him if possible. 
+ user: I checked further ahead, but doctor Johnson still isn't showing as available for follow-up consultation. Would you like to book with Doobie Hauser, Karl Mintz, or Kelly Noble instead? Or should I keep checking future dates for doctor Johnson? 
+ assistant: What days and times are available with Dr. Mintz? 
+ user: Carl Mints has openings on Friday, August twenty first. The available times are one PM, two PM, three PM, and four PM. Would you like to book one of these or hear about other dates? 
+ assistant: What other days are available with Dr. Mintz? 
+ 

@@ -1,0 +1,18 @@
+assistant: Hi, I'm calling because I need a refill on one of my medications, but I'm not su- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I'm calling because I need a refill on o- 
+ user: Thanks for calling To The Point Orthopaedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I'm calling because I need a refill on one of my medications, but I'm not sure if I need an appointment first. 
+ user: I see you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ assistant: Hello? 
+ user: The birthday you gave doesn't match our records. But for demo purposes, I'll accept it. I checked your chart. Don't see any medications on file that I can refill right now. If you think this is a mistake or want to speak with someone, just let me know. 
+ assistant: I believe there may be a mistake because I have been taking blood pressure medication. What should I do to get the refill? 
+ user: I don't see any blood pressure medication listed in your chart for refills. If you like, I can connect you to our patient support team to help sort this out. Would you like to speak with someone directly? 
+ assistant: Yes, please. That would be great. 
+ user: Transferring you now. Thank you. Hello. You've reached the Pretty Good AI test line. Goodbye. 
+ agent-action: Ended call 
+ assistant: Okay, goodbye. 
+ 

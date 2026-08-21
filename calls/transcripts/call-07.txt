@@ -1,0 +1,40 @@
+assistant: Hi, I'd like to make an appointment, but I have a couple of questions about i- 
+ user: Call may be recorded for quality and training purposes. 
+ assistant: Hi, I'd like to make an appointment, but I have a cou- 
+ user: Thanks for calling PivotPoint Orthopedics, part of Pretty Good AI. How may I help you today? 
+ assistant: Hi, I'd like to make an appointment, but I have a couple of questions about insurance first. 
+ user: I see you're calling from the number we have on file. Am I speaking with John? 
+ assistant: Yes, this is John Smith. 
+ user: Please provide your date of birth. 
+ assistant: January fifteenth, nineteen eighty. 
+ user: The birthday doesn't match our records. But for demo purposes, I'll accept it. What questions do you have about insurance? 
+ assistant: My insurance is Blue Cross Blue Shield. Do you accept that? 
+ user: PivotPoint Orthopedics, they accepts most insurance plans, including Blue Cross Blue Shield. Would you like to update your insurance information on file, or do you have other questions about coverage? 
+ assistant: Do you know if my insurance would cover a regular office visit, or would I need to check with my insurance company first? 
+ user: We recommend checking directly with your insurance company to confirm coverage details for office visit. Most plans do cover orthopedic visits, but coverage can vary. Would you like to continue with scheduling your appointment? 
+ assistant: Yes, please. I've been having some mild knee pain and I'd like to have it checked. It's not an emergency. 
+ user: Since you mentioned mild knee pain, it's not urgent, would you like to book a general office visit to have it checked? 
+ assistant: Yes, that sounds right. 
+ user: Do you have a specific provider you'd like to see, or are you open to the next available? 
+ assistant: I'm open to the next available. 
+ assistant: Hello? Are you there? 
+ user: We have openings this Friday with 
+ assistant: That works for me. What time is available? 
+ user: with doctor Zignia Lukowski at 
+ assistant: Okay. 
+ user: we have openings this 
+ assistant: Okay. 
+ user: the earliest 
+ assistant: Okay. 
+ user: the earliest avail 
+ assistant: Okay. 
+ user: the earliest 
+ assistant: Okay. 
+ user: the earliest 
+ assistant: Okay. 
+ user: the earliest 
+ assistant: Okay. 
+ user: the earliest available slot this Friday is at nine thirty AM with doctor Zigniew Lukovsky. Would you like to book that time? 
+ assistant: Yes, please. Before we finalize, is there anything specific I should bring to the visit? 
+ user: Please bring your government issued photo ID, insurance card, a list of your current medications, and any imaging disc if you have them. 
+ 
